@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>update student details</h1>
+    <form method="post">
+        {%csrf_token%}
+        <label for="fname">First Name</label>
+        <input type="text" name="='fname"value="{{stud.fname}}">
+        <label for="sname"></label>Second Name </label>
+        <input type="text" name="='sname"value="{{stud.fname}}">
+        <label for="email">Email</label>
+        <input type="text" name="='email"value="{{stud.fname}}">
+        <label for="regNo">regNo</label>
+        <input type="text" name="='regNo"value="{{stud.fname}}">
+        <label for="age">Age</label>
+        <input type="number" name="='age"value="{{stud.fname}}">
+        <button type="submit">Submit</button>
+    
+</body>
+</html>

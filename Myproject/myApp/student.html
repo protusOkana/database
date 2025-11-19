@@ -1,0 +1,32 @@
+{% extends 'myApp/base.html' %}
+    <style>
+        .navigation{
+            background-color: aqua;
+            float: right;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation<details></details></title>
+</head>
+<body>
+    {% block content %}
+<secttion class="navigation">
+    <header>
+    <nav>
+        <a class=logo href="navigation"><h1>students details</h1></a>
+        <ul>
+            <li><a href="{% urls 'home' %}">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="{% urls 'registerstudent' %}">Register student</a></li>
+            <li><a href="sign up">Sign up</a></li>
+            <li><a href="contact">Contact </a></li>
+            
+
+        </ul>
+        </div>
+    </header>
+ 
+    {%  endblock %}
+</body>
+</html>
